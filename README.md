@@ -89,3 +89,42 @@ go run . remove 1
 ```
 
 ## Example Output
+<img width="252" height="195" alt="image" src="https://github.com/user-attachments/assets/b8867f17-a782-4ca5-a032-6280b61b7d33" />
+
+## Build Executable
+
+```bash
+go build -o todo.exe
+```
+
+Run application:
+
+```bash
+todo.exe add "Buy milk"
+```
+```bash
+todo.exe list
+```
+```bash
+todo.exe modify 1 "Get car"
+```
+```bash
+todo.exe done 1
+```
+```bash
+todo.exe remove 1
+```
+
+## After using the application
+
+### Stop Containers (Keep Data)
+
+```bash
+docker compose down
+```
+
+### Cleanup (Remove All Data)
+
+```bash
+docker compose down -v
+```
